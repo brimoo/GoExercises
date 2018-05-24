@@ -14,3 +14,5 @@ command: `go run /path/to/file/file_name.go`. You can then run the generated exe
 ## Package Descriptions
 
 * __Hello__: The classic "Hello, World!" program
+
+* __Factorial__: Computes the factorial of the user entered number using dynamic programming (bottom up)
