@@ -1,15 +1,14 @@
-# GoProjects
+# GoExercises
 
 ## About
-Hello! This repo contains the code from my journey in learning the Go language. 
+Hello! This repo contains the exercises I used to aid my learning of the Go language. 
 
 ## How to Run
 Make sure Go is installed first, then you can run the code in one of two ways. Firstly, you can clone this
-repository into a Go workspace and name the directory src. Then each package can be installed by running
-the following command: `go install /path/to/package/package_name`. The package can then be run with the
-executable inside of the bin folder in the workspace. Alternatively, if you wish to build an individual
-go file without setting up a workspace you can simply clone the repo anywhere and run the following 
-command: `go run /path/to/file/file_name.go`.
+repository into the src folder of your Go workspace. Then each package can be installed by running `go install` on 
+the package you wish to install, then an executable will be generated in the bin folder of your workspace. 
+Alternatively, if you wish to build an individual go file without setting up a workspace you can simply 
+clone the repo anywhere and use`go run` on the file you wish to run.
 
 ## Package Descriptions
 
