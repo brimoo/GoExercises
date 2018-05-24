@@ -13,4 +13,4 @@ command: `go run /path/to/file/file_name.go`. You can then run the generated exe
 
 ## Package Descriptions
 
-* Hello: The classic "Hellow, World!" program
+* Hello: The classic "Hello, World!" program
