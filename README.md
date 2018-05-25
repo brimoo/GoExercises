@@ -18,4 +18,4 @@ clone the repo anywhere and use`go run` on the file you wish to run.
 
 * __Hamming__: Computes the Hamming distance between two DNA strands
 
-* __Lettercount__: Counts the occurences of a letter in multiple files using concurrency
+* __Lettercount__: Counts the occurrences of a letter in multiple files using concurrency
