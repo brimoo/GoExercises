@@ -42,6 +42,11 @@ func main() {
 	letter, _ := reader.ReadString('\n')
 	letter = letter[:len(letter)-1]
 
+	if len(letter) > 1 {
+		fmt.Println("Please enter a single letter")
+		os.Exit(0)
+	}
+
 	wg.Add(fileCount)
 	for i := 0; i < len(files); i++ {
 		go letterCount(files[i], letter)
