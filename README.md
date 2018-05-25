@@ -17,3 +17,5 @@ clone the repo anywhere and use`go run` on the file you wish to run.
 * __Factorial__: Computes the factorial of the user entered number using dynamic programming (bottom up)
 
 * __Hamming__: Computes the Hamming distance between two DNA strands
+
+* __Lettercount__: Counts the occurences of a letter in multiple files using concurrency
