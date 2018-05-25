@@ -32,7 +32,7 @@ func main() {
 	files := make([]string, fileCount)
 
 	for i := 0; i < fileCount; i++ {
-		fmt.Print("Enter name of file ", i+1, " (make sure it's in the package directory): ")
+		fmt.Print("Enter name of file ", i+1, " (absolute path): ")
 		file, _ := reader.ReadString('\n')
 		file = file[:len(file)-1]
 		files[i] = file
@@ -57,8 +57,7 @@ func main() {
 
 func letterCount(file, letter string) {
 	defer wg.Done()
-	pwd, _ := os.Getwd()
-	fileBytes, err := ioutil.ReadFile(pwd + "/" + file)
+	fileBytes, err := ioutil.ReadFile(file)
 
 	if err != nil {
 		fmt.Println(err)
