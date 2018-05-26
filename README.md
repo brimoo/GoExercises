@@ -19,3 +19,5 @@ clone the repo anywhere and use`go run` on the file you wish to run.
 * __Hamming__: Computes the Hamming distance between two DNA strands
 
 * __Lettercount__: Counts the occurrences of a letter in multiple files using concurrency
+
+* __Anagrams__: User enters a word, then a list of words to check. Outputs words from the list that are anagrams of the first word.
