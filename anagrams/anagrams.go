@@ -21,7 +21,7 @@ func main() {
 	temp, _ := reader.ReadString('\n')
 	temp = temp[:len(temp)-1]
 
-	for temp != "0" {
+	for string(temp[0]) != "0" {
 		words = append(words, temp)
 		fmt.Print("Enter word to check(enter 0 to finish): ")
 		temp, _ = reader.ReadString('\n')
