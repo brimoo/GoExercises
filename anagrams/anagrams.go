@@ -28,11 +28,10 @@ func main() {
 		temp = temp[:len(temp)-1]
 	}
 
-	anagrams(word, words)
-
+	printAnagrams(word, words)
 }
 
-func anagrams(word string, words []string) {
+func printAnagrams(word string, words []string) {
 	fmt.Println("--Anagrams--")
 	for i := 0; i < len(words); i++ {
 		if isAnagram(word, words[i]) {
