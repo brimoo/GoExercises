@@ -23,3 +23,5 @@ clone the repo anywhere and use`go run` on the file you wish to run.
 * __Anagrams__: User enters a word and a list of words. Outputs words from the list that are anagrams of the first word.
 
 * __HelloTCP__: Listens to TCP connection on port 4000 and prints "Hello!" to the connection.
+
+* __EchoTCP__: Listens to a TCP connection on port 4000 and echoes anything that is written on the connection.
