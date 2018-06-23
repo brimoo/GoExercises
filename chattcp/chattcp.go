@@ -6,10 +6,10 @@
 package main
 
 import (
-	"net"
-	"log"
-	"io"
 	"fmt"
+	"io"
+	"log"
+	"net"
 )
 
 const listenerAddr = "localhost:4000"
@@ -33,10 +33,10 @@ func main() {
 func findChatPartner(connection io.ReadWriteCloser) {
 	fmt.Fprintln(connection, "Waiting for partner...")
 	select {
-		case partner:= <- partnerChannel:
-			chat(connection, partner)
-		case partnerChannel <- connection:
-			// Partner will handle the connection
+	case partner := <-partnerChannel:
+		chat(connection, partner)
+	case partnerChannel <- connection:
+		// Partner will handle the connection
 	}
 }
 
@@ -46,14 +46,14 @@ func chat(a, b io.ReadWriteCloser) {
 	errorChannel := make(chan error, 1)
 	go sendMessage(a, b, errorChannel)
 	go sendMessage(b, a, errorChannel)
-	if err := <- errorChannel; err != nil {
+	if err := <-errorChannel; err != nil {
 		log.Println(err)
 	}
 	a.Close()
 	b.Close()
 }
 
-func sendMessage(writer io.Writer, reader io.Reader, errorChannel chan <- error) {
+func sendMessage(writer io.Writer, reader io.Reader, errorChannel chan<- error) {
 	_, err := io.Copy(writer, reader)
 	errorChannel <- err
 }

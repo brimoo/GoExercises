@@ -6,9 +6,9 @@
 package main
 
 import (
-	"net"
-	"log"
 	"fmt"
+	"log"
+	"net"
 )
 
 const listenerAddr = "localhost:4000"
