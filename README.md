@@ -21,3 +21,5 @@ clone the repo anywhere and use`go run` on the file you wish to run.
 * __Lettercount__: Counts the occurrences of a letter in multiple files using concurrency
 
 * __Anagrams__: User enters a word and a list of words. Outputs words from the list that are anagrams of the first word.
+
+* __HelloTCP__: Listens to TCP connection on port 4000 and prints "Hello!" to the connection.
